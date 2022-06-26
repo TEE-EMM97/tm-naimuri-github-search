@@ -16,4 +16,4 @@ const Header = ({title, sub_title}: Props) => {
   );
 }
 
-export default Header
+export {Header}
