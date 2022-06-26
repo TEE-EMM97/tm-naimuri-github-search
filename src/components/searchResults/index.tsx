@@ -3,7 +3,7 @@ import React from 'react';
 import { useDebounce } from 'use-debounce';
 import searchRepositories from '../../lib/queries/searchRepository';
 import { SearchResultItemEdge } from '../../lib/types/githubTypes';
-import RepositoryItem from './repositoryItem';
+import RepositoryItem from './RepositoryItem';
 
 interface Props {
   searchTerm?: string;
