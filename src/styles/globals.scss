@@ -10,8 +10,9 @@
 		font-family: 'Roboto',
 			sans-serif;
 		;
+		text-align: center;
 		color: black;
-		background-color: green;
+		background-color: #03c9a9;
 		display: block;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -23,7 +24,8 @@
 	}
 
 	form {
-		width: min(500px, 80vw);
+		width: min(700px, 80vw);
+		margin: 0 auto;
 
 		input {
 			border: 0;
@@ -42,9 +44,20 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		max-width: 1024px;
+		margin: 0 auto;
 		padding-left: 15px;
 		padding-right: 15px;
+
+	}
+
+	article {
+		background-color: rgba(230, 232, 235, 0.7);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+			0 6px 6px rgba(0, 0, 0, 0.23);
+		padding: 10px;
+		text-align: left;
+		text-transform: capitalize;
+		margin-top: 20px;
 	}
 }
