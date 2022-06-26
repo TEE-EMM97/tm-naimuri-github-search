@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import styles from './index.module.scss'
 interface Props {
   repository: any;
 }
@@ -16,20 +16,17 @@ const RepositoryItem = ({ repository }: Props) => {
     stargazers: { totalCount },
   } = repository;
 	return (
-    <>
-      <article>
+      <article className={styles.repo_card}>
         <Link href={`/${login}/${name}`}>
           <a>{name}</a>
         </Link>
-        <p>stars:{totalCount}</p>
-        <p>forks:{forkCount}</p>
-        <p>language:{primaryLanguage?.name}</p>
-        <p>issues:{issues.totalCount}</p>
-        <p>user: {login}</p>
+        <p>stars: {totalCount}</p>
+        <p>forks: {forkCount}</p>
+        <p>language: {primaryLanguage?.name}</p>
+        <p>issues: {issues.totalCount}</p>
         <p>forkCount: {forkCount}</p>
         {description && <p>{description}</p>}
       </article>
-    </>
   );
 };
 

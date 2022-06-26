@@ -1,0 +1,32 @@
+.repo_card {
+	background-color: rgba(230, 232, 235, 0.7);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+		0 6px 6px rgba(0, 0, 0, 0.23);
+	padding: 10px;
+	text-align: left;
+	text-transform: capitalize;
+	margin: 20px auto;
+	width: min(700px, 100%);
+	a {
+		text-decoration: underline;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	p {
+		border-radius: 20px;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+			0 6px 6px rgba(0, 0, 0, 0.23);
+		width: fit-content;
+		font-weight: 700;
+		padding: 10px;
+
+		&:nth-child(odd) {
+			background-color: #9DD6DF;
+		}
+
+		&:nth-child(even) {
+			background-color: #A084CF;
+		}
+	}
+}
