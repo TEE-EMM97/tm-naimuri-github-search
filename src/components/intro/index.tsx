@@ -1,13 +1,15 @@
 import React from 'react'
-import {Header} from '../Header';
+import Header from '../Header';
 
 
 const Intro = () => {
   return (
-    <Header
-      title={'GitHub Repo Finder'}
-      sub_title={'Search for repositories'}
-    />
+    <header>
+      <div className="container">
+        <h1>GitHub Repo Finder</h1>
+        <p>Search for repositories</p>
+      </div>
+    </header>
   );
 }
 
