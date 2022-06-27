@@ -3,8 +3,7 @@ import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 import Markdown from 'markdown-to-jsx';
-
-import client from '../../lib/ApolloClient';
+import client from '../../lib/ApolloClient'
 import repositoryDetails from '../../lib/queries/repositoryDetails';
 import { Repository } from '../../lib/types/githubTypes';
 import styles from './index.module.scss'
